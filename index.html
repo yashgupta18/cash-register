@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1>Cash Register Manager</h1>
+        <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+        <div class="primary-details">
+            <h2>Bill Amount:</h2>
+            <input class="bill-amount" min="1" type="number">
+            <button class="btn-next">Next</button>
+            <p class="primary-error error">Enter valid bill amount</p>
+        </div>
+        <div class="secondary-details">
+            <h2>Cash Given:</h2>
+            <input class="cash-given" min="1" type="number">
+            <button class="btn-check">check</button>
+            <p class="secondary-error error">Cash is less than bill, please enter right amount</p>
+        </div>
+        <div class="notes-table">
+            <h2>Return Change:</h2>
+            <table class="border-collapse">
+                <tr>
+                    <th>No.of Notes</th>
+                    <td class="notesOfTwoK td-color"></td>
+                    <td class="notesOfFiveH td-color"></td>
+                    <td class="notesOfHundred td-color"></td>
+                    <td class="notesOfTwenty td-color"></td>
+                    <td class="notesOfTen td-color"></td>
+                    <td class="notesOfFive td-color"></td>
+                    <td class="notesOfOne td-color"></td>
+                </tr>
+                <tr>
+                    <th>Note</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="style.js"></script>
+</body>
+
+</html>
